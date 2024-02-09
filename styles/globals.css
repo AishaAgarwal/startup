@@ -1,0 +1,13 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('../public/home-main.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Optional: This will make the background fixed while scrolling */
+  }
+  
+  /* Add any other styles you need for your components */
+  

@@ -111,6 +111,7 @@ const menuItems = [
         },
         nav: {
           display: ['none', 'none', 'none', 'flex'],
+          color: 'white',
           gap: '1rem',
           cursor: 'pointer',
           alignItems: 'center',

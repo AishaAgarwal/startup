@@ -29,12 +29,14 @@ const Banner = () => {
 export default Banner;
 
 const styles = {
+  
   banner: {
     display: 'grid',
     gridTemplateColumns: ['1fr', '1fr', '1fr 1fr', '2fr 3fr'],
   },
   banner__text: {
     display: 'flex',
+    color: 'white',
     flexDirection: 'column',
     gap: '1rem',
     marginBottom: '2rem',
