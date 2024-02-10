@@ -1,7 +1,7 @@
 import Navbar from '../Components/Navbar/Navbar';
 import Banner from '../Containers/Banner';
-import homeLogo from "../public/home-main.svg";
 
+import Features from '../Containers/Features';
 import Fab from '@mui/material/Fab';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
@@ -25,6 +25,7 @@ const Home = (props) => {
           
         <div id="back-to-top-anchor" />
         <Banner/>
+        <Features/>
         
         
           <Fab color="secondary" size="small" aria-label="scroll back to top">
