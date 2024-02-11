@@ -4,7 +4,7 @@ import Banner from '../Containers/Banner';
 import Features from '../Containers/Features';
 import Fab from '@mui/material/Fab';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
-
+import Testimonials from '../Containers/Testimonials';
 import { AppBar } from '@mui/material';
 
 const Home = (props) => {
@@ -26,6 +26,7 @@ const Home = (props) => {
         <div id="back-to-top-anchor" />
         <Banner/>
         <Features/>
+        <Testimonials />
         
         
           <Fab color="secondary" size="small" aria-label="scroll back to top">
