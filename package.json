@@ -26,7 +26,8 @@
     "react-scroll": "^1.9.0",
     "react-tsparticles": "^2.12.2",
     "styled-components": "^6.1.8",
-    "swiper": "^11.0.6",
+    "swiper": "^8.4.7",
+    "swiper-react": "^1.0.0",
     "tailwind": "^4.0.0",
     "tsparticles": "^3.2.1"
   },

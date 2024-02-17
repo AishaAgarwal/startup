@@ -35,7 +35,7 @@ const About = () => {
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
 
-      {/* avatar img */}
+    
       
 
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
