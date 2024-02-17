@@ -3,12 +3,14 @@ import { useState } from "react";
 import CountUp from "react-countup";
 
 
+
+
 import Circles from "../../components/Circles";
 import { fadeIn } from "../../variants";
 
 //  data
 export const aboutData = [
-
+ 
   {
     title: "awards",
     info: [
@@ -22,7 +24,8 @@ export const aboutData = [
       },
     ],
   },
-
+ 
+ 
 ];
 
 const About = () => {
@@ -32,7 +35,8 @@ const About = () => {
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
 
-    
+      {/* avatar img */}
+      
 
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
@@ -53,7 +57,7 @@ const About = () => {
             animate="show"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, We begin freelancing as a developer. Since then, We've
+            10 years ago, I begin freelancing as a developer. Since then, I've
             done remote work for agencies, consulted for startups, and
             collabrated on digital products for business and consumer use.
           </motion.p>
