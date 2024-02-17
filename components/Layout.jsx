@@ -3,7 +3,7 @@ import Head from "next/head";
 
  import Header from "../components/Header";
  import Nav from "../components/Nav";
-// import TopLeftImg from "../components/TopLeftImg";
+ import TopLeftImg from "../components/TopLeftImg";
 
 // setup font
 const sora = Sora({
@@ -32,8 +32,9 @@ const Layout = ({ children }) => {
         <meta name="theme-color" content="#f13024" />
       </Head>
 
-      {/* <TopLeftImg />
+      {/* 
     */}
+    <TopLeftImg />
     <Nav /> 
       {/*  */}
       <Header />
