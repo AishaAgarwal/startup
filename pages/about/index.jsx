@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import CountUp from "react-countup";
-
+import TeamMember from "../TeamMember";
 
 
 
@@ -25,6 +25,7 @@ export const aboutData = [
     ],
   },
  
+  
  
 ];
 
@@ -32,13 +33,13 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="min-h-screen bg-primary/30 py-32 text-center xl:text-left flex flex-col  overflow-y-auto">
       <Circles />
 
     
       
 
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
+      <div className="flex-1 container mx-auto flex flex-col items-center xl:flex-row gap-x-6 overflow-y-auto">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
@@ -111,56 +112,49 @@ const About = () => {
               </div>
             </div>
           </motion.div>
+
+          {/* meet the team section */}
+          <h2 className="text-4xl font-bold mb-8 ml-[400px] mt-[100px]">Meet the <span className="text-accent">Team</span></h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 ml-[220px] mt-[10px]">
+            
+              <TeamMember
+              key={0}
+              name="Mudit Jain"
+             
+              description="Founder and CEO of company "
+              imageSrc= "https://tse1.mm.bing.net/th?id=OIP.cxcqa9RvhGnRd8x3N2oBdgHaHn&pid=Api&P=0&h=180"/>
+
+<TeamMember
+              key={0}
+              name="Ayush Pandey"
+             
+              description="Founder and CEO of company "
+              imageSrc= "https://tse1.mm.bing.net/th?id=OIP.cxcqa9RvhGnRd8x3N2oBdgHaHn&pid=Api&P=0&h=180"/>
+            
+            </div>
+          {/* <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items -center xl:items-start">
+            
+          </div> */}
+
+          <motion.div
+            variants={fadeIn("left", 0.4)}
+            initial= "hidden"
+            animate="show"
+            exit="hidden"
+            className="flex flex-col w-full xl:max-w-[48%] h-[480px]"></motion.div>
+        
         </div>
 
-        {/* info */}
-        <motion.div
-          variants={fadeIn("left", 0.4)}
-          initial="hidden"
-          animate="show"
-          exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
-        >
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
-            {aboutData.map((item, itemI) => (
-              <div
-                key={itemI}
-                className={`${
-                  index === itemI &&
-                  "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300"
-                } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                onClick={() => setIndex(itemI)}
-              >
-                {item.title}
-              </div>
-            ))}
-          </div>
-
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-            {aboutData[index].info.map((item, itemI) => (
-              <div
-                key={itemI}
-                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-center text-white/60"
-              >
-                {/* title */}
-                <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                <div className="hidden md:flex">-</div>
-                <div>{item.stage}</div>
-
-                <div className="flex gap-x-4">
-                  {/* icons */}
-                  {item.icons?.map((Icon, iconI) => (
-                    <div key={iconI} className="text-2xl text-white">
-                      <Icon />
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </motion.div>
+    
+       
+        
+       
       </div>
-    </div>
+
+     
+           
+          </div>
+   
   );
 };
 
