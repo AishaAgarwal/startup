@@ -68,9 +68,9 @@ const About = () => {
             variants={fadeIn("right", 0.6)}
             initial="hidden"
             animate="show"
-            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
+            className="flex flex-col items-center md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
           >
-            <div className="flex flex-1 xl:gap-x-6">
+            <div className="flex flex-1 md:gap-x-6">
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
@@ -114,8 +114,8 @@ const About = () => {
           </motion.div>
 
           {/* meet the team section */}
-          <h2 className="text-4xl font-bold mb-8 ml-[400px] mt-[100px]">Meet the <span className="text-accent">Team</span></h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 ml-[220px] mt-[10px]">
+          <h2 className="text-2xl md:text-4xl xl:text-5xl font-bold mb-4 md:mb-8 text-center mt-[100px]">Meet the <span className="text-accent">Team</span></h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 mx-auto md:ml-[350px]">
             
               <TeamMember
               key={0}
@@ -141,7 +141,7 @@ const About = () => {
             initial= "hidden"
             animate="show"
             exit="hidden"
-            className="flex flex-col w-full xl:max-w-[48%] h-[480px]"></motion.div>
+            className="hidden md:flex md:flex-col w-full md:xl:max-w-[48%] h-[480px] mx-auto  xl:ml-0"></motion.div>
         
         </div>
 
