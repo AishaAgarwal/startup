@@ -5,6 +5,12 @@
 .translate-z-0 {
   transform: translateZ(0px);
 }
+
+.overflow-y-auto {
+  overflow-y: auto;
+  overflow-x: hidden; /* Ensure horizontal scrolling is hidden */
+}
+
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {
