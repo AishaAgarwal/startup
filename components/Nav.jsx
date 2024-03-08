@@ -10,6 +10,7 @@ import {
   HiChatBubbleBottomCenterText,
   HiEnvelope,
 } from "react-icons/hi2";
+import { FaBloggerB } from "react-icons/fa6";
 
 // nav data
 export const navData = [
@@ -27,6 +28,7 @@ export const navData = [
     path: "/contact",
     Icon: HiEnvelope,
   },
+  { name: "Blog", path: "/blog", Icon: FaBloggerB },
 ];
 
 const Nav = () => {
